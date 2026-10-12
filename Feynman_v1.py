@@ -11,9 +11,9 @@ from scipy.spatial import cKDTree
 
 
 DEFAULTS = (
-    "/Users/4c/Desktop/GHQ/data/loto7_4698_k80.csv",
-    "/Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_2971.csv",
-    "/Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_plus_1727.csv",
+    "/data/loto7_4698_k80.csv",
+    "/data/loto7_4698_k80_loto_2971.csv",
+    "/data/loto7_4698_k80_loto_plus_1727.csv",
 )
 
 WINDOW, PATHS, STARTS = 96, 24, 12
@@ -618,39 +618,39 @@ if __name__ == "__main__":
 
 
 """
-CSV: /Users/4c/Desktop/GHQ/data/loto7_4698_k80.csv
+CSV: /data/loto7_4698_k80.csv
 Hronologija: CSV mora biti od najstarijeg ka najnovijem kolu.
 Validacija: 48; odvojeni test: 64
 FEYNMAN: INTERFERENCIJA: alpha=0.1, prosek=1.4219, pogoci 0..7=[11, 25, 19, 8, 1, 0, 0, 0]
 Kontrola: bez interferencije: alpha=0.1, prosek=1.1250, pogoci 0..7=[15, 29, 17, 3, 0, 0, 0, 0]
 Kontrola: prethodno izvuceno kolo: 1.2188
-SLEDECI RED 4699: 1,2,6,7,16,35,36
+SLEDECI RED 4699: 1,x,6,y,16,z,36
 Skor=1.2174473380; koraci=15; istorijsko ponavljanje=False
 Skor nije verovatnoca. Pretraga: istorijska polazista i dozvoljene
 zamene jednog broja; lokalni optimum, bez tvrdnje o globalnom.
 
 
 
-CSV: /Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_2971.csv
+CSV: /data/loto7_4698_k80_loto_2971.csv
 Hronologija: CSV mora biti od najstarijeg ka najnovijem kolu.
 Validacija: 48; odvojeni test: 64
 FEYNMAN: INTERFERENCIJA: alpha=0.1, prosek=1.1406, pogoci 0..7=[17, 28, 12, 7, 0, 0, 0, 0]
 Kontrola: bez interferencije: alpha=0.1, prosek=1.3906, pogoci 0..7=[14, 24, 15, 9, 2, 0, 0, 0]
 Kontrola: prethodno izvuceno kolo: 1.2969
-SLEDECI RED 2972: 1,3,5,7,8,10,39
+SLEDECI RED 2972: 1,x,5,y,8,z,39
 Skor=1.3920426829; koraci=11; istorijsko ponavljanje=False
 Skor nije verovatnoca. Pretraga: istorijska polazista i dozvoljene
 zamene jednog broja; lokalni optimum, bez tvrdnje o globalnom.
 
 
 
-CSV: /Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_plus_1727.csv
+CSV: /data/loto7_4698_k80_loto_plus_1727.csv
 Hronologija: CSV mora biti od najstarijeg ka najnovijem kolu.
 Validacija: 48; odvojeni test: 64
 FEYNMAN: INTERFERENCIJA: alpha=1, prosek=1.2344, pogoci 0..7=[16, 23, 19, 6, 0, 0, 0, 0]
 Kontrola: bez interferencije: alpha=1, prosek=1.2500, pogoci 0..7=[14, 26, 18, 6, 0, 0, 0, 0]
 Kontrola: prethodno izvuceno kolo: 1.2969
-SLEDECI RED 1728: 1,2,6,7,11,14,15
+SLEDECI RED 1728: 1,x,6,y,11,z,15
 Skor=0.7159047675; koraci=9; istorijsko ponavljanje=False
 Skor nije verovatnoca. Pretraga: istorijska polazista i dozvoljene
 zamene jednog broja; lokalni optimum, bez tvrdnje o globalnom.
@@ -671,7 +671,7 @@ Konkretna definicija putanja i njihove akcije prilagođena je Lotu.
 Interferencija je pomogla na zbirnom fajlu, ali prednost nije dosledna na sva tri.
 
 CSV	        Prosek pogodaka	Bez interferencije	Sledeća kombinacija
-Zbirni 4698	1,4219	        1,1250	            1,2,6,7,16,35,36
-Loto 2971	1,1406	        1,3906	            1,3,5,7,8,10,39
-Plus 1727	1,2344	        1,2500	            1,2,6,7,11,14,15
+Zbirni 4698	1,4219	        1,1250	            1,x,6,y,16,z,36
+Loto 2971	1,1406	        1,3906	            1,x,5,y,8,z,39
+Plus 1727	1,2344	        1,2500	            1,x,6,y,11,z,15
 """
